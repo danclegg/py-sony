@@ -57,3 +57,19 @@ elif ip is None:
         sys.exit("Error scanning subnet")
 else:
     sys.exit("Error getting device info")
+
+
+hosts_to_check = []
+sonys = []
+
+#find devices with mac addresses and output to the hosts_to_check array
+for h in nm.all_hosts():
+    if 'mac' in nm[h]['addresses']:
+        hosts_to_check.append(nm[h]['addresses'])
+
+#find sony devices in hosts_to_check array and output ips to the sonys array
+for host in hosts_to_check:
+    if host['mac'].find("AC:9B:0A") == 0:
+        sonys.append(host['ipv4'])
+
+print sonys
