@@ -15,7 +15,16 @@ if args.ip:
     try:
         ipValidation = validateIp.parse(args.ip)
         assert(ipValidation == "valid")
+        ip = args.ip
     except:
         sys.exit("--ip is not a proper IP address")
 else:
     sys.exit("--ip is a required argument")
+
+requestUrl = "http://%s/sony/system" % ip
+
+body = {"method":"getRemoteControllerInfo","params":[],"id":10,"version":"1.0"}
+print body
+response = requests.post(requestUrl, json=body)
+
+print response.json()
