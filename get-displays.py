@@ -11,7 +11,7 @@ __status__ = "Development"
 # http://danclegg.net
 # @dgclegg
 
-parser = argparse.ArgumentParser(description='Get Control Codes for a Sony Display')
+parser = argparse.ArgumentParser(description='Get Sony Devices in address range')
 parser.add_argument('--ip')
 parser.add_argument('--subnet')
 
