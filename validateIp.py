@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 import socket
 
+__author__ = "Dan Clegg"
+__email___ = "nospamdan@gmail.com"
+__maintainer__ = "Dan Clegg"
+__status__ = "Production"
+# http://danclegg.net
+# @dgclegg
+
 def parse(ip):
     # parse and validate ip address
     try:

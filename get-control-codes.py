@@ -5,6 +5,14 @@ import requests
 import sys
 import validateIp
 
+__author__ = "Dan Clegg"
+__email___ = "nospamdan@gmail.com"
+__maintainer__ = "Dan Clegg"
+__status__ = "Development"
+# http://danclegg.net
+# @dgclegg
+
+
 parser = argparse.ArgumentParser(description='Get Control Codes for a Sony Display')
 parser.add_argument('--ip')
 
