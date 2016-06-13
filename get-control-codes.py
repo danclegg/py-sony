@@ -12,7 +12,6 @@ __status__ = "Development"
 # http://danclegg.net
 # @dgclegg
 
-
 parser = argparse.ArgumentParser(description='Get Control Codes for a Sony Display')
 parser.add_argument('--ip')
 
